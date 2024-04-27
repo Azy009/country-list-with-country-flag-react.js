@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+body{
+  background-color: #fdfdfd;
+}
+.custom-container {
+  /* border: 1px solid #fff; */
+  /* border-radius: 10px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  background-color: #fff; /* Cool color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PhoneInputInput{
+  border: none !important;
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.PhoneInputCountrySelect {
+  position: absolute;
+  /* top: 116px !important; */
+  bottom: 0 !important;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.titlecls{
+  color: #0e71a5;
+    font-weight: 700;
+    font-family: emoji;
+}
+
+.btncls{
+  background: #0e71a5;
+  font-weight: 600;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
