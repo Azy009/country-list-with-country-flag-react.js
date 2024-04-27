@@ -22,7 +22,7 @@ console.log("amdk",phone)
         <div className="row justify-content-center" style={{flexDirection:'column'}}>
             <div className="offset-3 col-6" style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
               <img src={img1} style={{ width: "300px", height: "170px", marginBottom: "20px" }} />
-              <h2 className="text-center mb-4 titlecls" style={{position:'relative',top:'-20px'}}>React.js</h2>
+              <h2 className="text-center mb-4 titlecls" style={{position:'relative',top:'-20px'}}>React.js Tutorial</h2>
             </div>
           <div className="offset-3 col-md-6">
             <div className="custom-container">
@@ -43,7 +43,7 @@ console.log("amdk",phone)
   <span class="input-group-text btncls" id="basic-addon2" onClick={()=>{setshow(true)}}>Sumbit</span>
 </div>
               
-              <div className="text-center" style={{display:phone?.length >= 13 && show == true ? "block" : "none"}}>
+              <div className="text-center" style={{display:phone?.length == 13 && show == true ? "block" : "none"}}>
                 <h4 className="titlecls">Phone No : {phone}</h4>
               </div>
             </div>
