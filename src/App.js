@@ -6,6 +6,7 @@ import img1 from "./logo.svg"; // Import your React.js icon SVG file
 
 const App = () => {
   const [phone, setphone] = useState(0);
+  const [show, setshow] = useState(false);
 console.log("amdk",phone)
   return (
     <div
@@ -35,13 +36,14 @@ console.log("amdk",phone)
                   value={phone}
                   onChange={(e) => {
                     setphone(e);
+                    setshow(false)
                   }}
                   required
                 />
-  <span class="input-group-text btncls" id="basic-addon2">Sumbit</span>
+  <span class="input-group-text btncls" id="basic-addon2" onClick={()=>{setshow(true)}}>Sumbit</span>
 </div>
               
-              <div className="text-center" style={{display:phone?.length >= 13 ? "block" : "none"}}>
+              <div className="text-center" style={{display:phone?.length >= 13 && show == true ? "block" : "none"}}>
                 <h4 className="titlecls">Phone No : {phone}</h4>
               </div>
             </div>
